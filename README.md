@@ -1,7 +1,4 @@
-Author: Anirudh Gundimeda
-
-
-******Overview******
+"******Overview******"
 
 This challenge has been solved using Python 3.10.4. This Python program and in particular python function is a solution to find out the missing seat ID in the Python Programming Challenge.
 
