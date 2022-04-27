@@ -22,10 +22,10 @@ This Python program and in particular python function is a solution to find out 
 # Approach
 
 ## find_missing_seat_id() function logic:
-As it is mentioned that the airline uses binary space partitioning and the first seven characters and last three characters depicts the information about seat row and seat column respectively, it is evident that the first seven characters are nothing but seven bit binary numbers and the last three are 3 characters are 3 bit binary numbers.
+As it is mentioned that the airline uses binary space partitioning and the first seven characters and the last three characters gives the information about seat row and seat column respectively, it is evident that the first seven characters are nothing but seven bit binary numbers and the last three characters are 3 bit binary numbers.
 
 Replacing the F,B,L and R characters with 0s and 1s will give a binary sequence. The first seven numbers sequence converted into a decimal gives the row number between 0 to 127 and the last three number sequence gives us the column number or seat number in that particular row from 0 to 7.
-So, the find_missing_seat_id() function converts each boarding pass into binary sequence to find out its row and column number and find the unique seat id of every boarding pass using the given formula.
+So, the find_missing_seat_id() function converts each boarding pass into binary sequence to find out its row and column number and find the unique seat id of every boarding pass using the given formula [seat ID = (row number*8)+ column number].
 
 ## Missing seat ID:
 As the flight is completely full and no seat is empty, the seat ids list collected in the above function will cover every seat in the flight except mine (or missing). So, the number missing in the sequence of all seat IDs is my (or mising) seat ID.
