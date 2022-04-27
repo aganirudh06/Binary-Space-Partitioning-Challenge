@@ -1,6 +1,11 @@
-"******Overview******"
+******Overview******
 
-This challenge has been solved using Python 3.10.4. This Python program and in particular python function is a solution to find out the missing seat ID in the Python Programming Challenge.
+This Python program and in particular python function is a solution to find out the missing seat ID in the Python Programming Challenge. This challenge has been solved using Python 3.10.4.
+
+******Dependencies******
+
+Python 3
+Any code editor that supports Python3
 
 ******Additional files and requirements to run the file******
 
@@ -9,12 +14,12 @@ This challenge has been solved using Python 3.10.4. This Python program and in p
 
 ******Steps to run the program******
 
-1. Open the python file in any code editor that supports Python.
-2. This program takes the boarding pass information (input) directly from the text file. Please replace the path on the second line of the program with the path at which your input text file is saved on your computer.
-3. Save the file and run the program to get the output.
+1. Open the python file in any code editor that supports Python 3.
+2. This program takes the boarding pass information (input) directly from the text file. Please replace the path on the second line of the program with the path at        which your input text file is saved on your computer.
+3. Save the python file and run the program to get the output.
 
 
-******Logic******
+******Approach******
 
 **find_missing_seat_id() function logic:**
 As it is mentioned that the airline uses binary space partitioning and the first seven characters and last three characters depicts the information about seat row and seat column respectively, it is evident that the first seven characters are nothing but seven bit binary numbers and the last three are 3 characters are 3 bit binary numbers.
