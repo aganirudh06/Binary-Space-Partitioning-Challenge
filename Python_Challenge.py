@@ -49,4 +49,4 @@ def find_missing_seat_id(input):
     return missing_list[0]
 
 #Function call
-print(find_missing_seat_id(input))
+find_missing_seat_id(input)
