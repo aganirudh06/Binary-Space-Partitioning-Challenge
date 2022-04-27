@@ -13,7 +13,7 @@ def find_missing_seat_id(input):
     for boarding_pass in input:
 
         #Convert the F and B, and L and R into binary language by replacing them with 0s and 1s
-        # Replacing F with 0, B with 1, L with 0, R with 1
+        #Replacing F with 0, B with 1, L with 0, R with 1
         translation_table = boarding_pass.maketrans("FBLR", "0101")
         
         #Convert the boarding pass sequence into binary sequence with 1s and 0s
@@ -35,7 +35,7 @@ def find_missing_seat_id(input):
     #Arranging the boarding passes into ascending order
     seat_ids.sort()
     
-    # Print out the maximum Seat ID
+    #Print out the maximum Seat ID
     print("Maximum Seat ID is: " + str(seat_ids[-1]))
     
     #Loop to find the missing seat (ID) between first and last available seats (IDs)
@@ -43,7 +43,7 @@ def find_missing_seat_id(input):
         if i not in seat_ids:
             missing_list.append(i)
 
-    # Print out the missing/my Seat ID
+    #Print out the missing/my Seat ID
     print("My Seat ID is: " + str(missing_list[0]))
 
     return missing_list[0]
