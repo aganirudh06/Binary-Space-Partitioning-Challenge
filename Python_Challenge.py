@@ -2,7 +2,7 @@
 with open(r"C:\Users\gundimed\Downloads\input.txt",'r') as f:
     input = f.read().splitlines()
 
-#This function finds out the missing seat ID using the list of Boarding Passes
+#This function finds out maximum and missing seat IDs using the list of Boarding Passes and prints them as output. Also, this function returns the missing seat ID.
 def find_missing_seat_id(input):
 
     #Initialise empty seat_ids lists to collect all seat ids calculated from boarding passes
